@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APPLICATION</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <h1> QUIZ FORM</h1>
+
+    <div id="formContainer">
+        <input id="name"  style="padding: 15px ;width: 250px;" type="text" placeholder="Enter Name...">
+        <br>
+        <span class="hide" id="nameError">Name required!</span>
+        <br>
+        <input id="email"style="width: 250px; padding: 15px;" type="text" placeholder="Enter Email...">
+        <br>
+        <span class="hide" id="emailError">Email required!</span>
+        <br>
+        <br>
+        <button style="padding: 15px;background-color: rgb(61, 134, 109);border: none;" onclick="formSubmitHandler()">SUBMIT</button>
+    
+
+
+    <div id="startContainer" class="hide">
+
+        <a href="quiz.html">
+            <button style="background-color: rgb(170, 33, 134);padding: 15px;border: none; color: aliceblue;">QUIZ START?</button>
+        </a>
+
+    </div>
+    </div>
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="quiz.js"></script>
+
+</html>

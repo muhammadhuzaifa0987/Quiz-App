@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css">
+
+</head>
+
+
+
+
+<body  style="background: rgb(6, 100, 109); overflow: hidden;;" onload="startQuiz()">
+
+    <h1 style="text-align: center; margin-bottom: 40px;">QUIZ APP</h1>
+
+
+
+
+    <div id="quizContainer">
+
+        <!-- header -->
+
+        <div class="header">
+
+            <section>
+
+                <div>
+
+                  <p  style="display: inline;"> Name:</p>
+
+                   
+                  <span id="userName"></span>
+
+                </div>
+
+                <div>
+
+                    <span> Email: </span>
+
+                    <span id="userEmail"></span>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <div>
+
+                    <span>Timer</span>
+                    <span id="min">15</span>
+                    <span id="">:</span>
+                   <span id="sec">00</span>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- body -->
+
+        <div class="body">
+
+            <div>
+
+                <h3 style="font-size: 30px;" id="htmlQues">
+
+                </h3>
+
+            </div>
+
+            <div>
+
+                <ol id="htmlOptions">
+
+                    <!-- <li>HELLO WORLD</li>
+
+                    <li>HELLO WORLD</li>
+
+                    <li>HELLO WORLD</li>
+
+                    <li>HELLO WORLD</li> -->
+
+                </ol>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <!-- footer -->
+
+        <div class="footer">
+
+            <div id="counter">
+
+                <span id="currentCount"> 1 </span> / <span id="totalCount"></span>
+
+            </div>
+            <div>
+
+                <button style="background: rgb(30, 128, 161);border: none;padding: 10px;" onclick="nextQues()" id="nextQuesBtn" class="hide">NEXT QUESTION>></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="resultcontainer hide" >
+
+       <h2 style="text-align: center;">YOUR RESULT</h2>
+
+        <div class="result">
+            <h3>
+               CORRECT ANSWERS:
+            </h3>
+            <p id="correctAns"></p>
+        </div>
+
+        <div class="result">
+
+            <h3>
+                WRONG ANSWERS :
+            </h3>
+
+            <p id="wrongAns"></p>
+
+        </div>
+    </div>
+    <div id="COMPLETE">
+    <a href="index.html">
+<button style="background:rgb(11, 97, 143) ;padding: 10px; border: 1px solid black;">COMPLETE</button>
+    </a>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="quiz.js"></script>
+
+</html>
